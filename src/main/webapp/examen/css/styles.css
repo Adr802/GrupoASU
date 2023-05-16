@@ -1,0 +1,178 @@
+@charset "UTF-8";
+body{
+	background-color: #f9fafa;
+	font-family: arial;
+}
+
+/*ESTILO HEADER*/
+header{
+	display: flex;
+	flex-wrap: wrap; 
+	width:100%;
+	justify-content: space-between;
+	margin-top: 20px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	background-color: rgb(0,0,0,0.120);
+}
+
+header ul{
+	display: flex;
+	list-style: none;
+	margin-left: 40px;	
+}
+header a{
+	text-decoration: none;
+}
+
+header a{
+	padding: 15px;
+	border-radius: 10px;
+	background-color:#E5EAEA;
+	margin-right: 40px;
+	color: black;
+}
+a:hover{
+	background-color: #adceee;
+}
+
+.presionado{
+	background-color: #0083BC;
+	color: white;
+}
+.presionado:hover{
+	background-color: #0083BC;
+	color: white;
+}
+header nav{
+	display: flex;
+}
+
+
+#linea {
+	text-align: center;
+	align-content: center;
+}
+/*ESTILO CUERPO*/
+
+#cuerpo{
+	display: flex;
+	flex-direction: column;
+}
+#cuerpo h1{
+	padding-left: 90px;
+	font-size: 3em;
+}
+
+.imgInicio{
+	width: 500px;
+}
+
+.contenido{
+	display: flex;
+	flex-direction: row;
+	padding: 100px;
+	padding-top: 50px;
+	justify-content: center;
+}
+
+.contenido p{
+	display:flex;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 1.3em;
+	text-align: justify;
+}
+
+.act-box {
+	background-color: #DBEBEE;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+	padding: 50px;
+	margin: -20px 20px 20px 20px;
+	
+}
+
+
+/*ESTILO BOTON*/
+footer{
+	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+.btnRegistro{
+	background-color: #0083BC; /* Color de fondo */
+ 	border: none; /* Sin borde */
+ 	color: white; /* Color de texto */
+  	padding: 20px 30px; /* Espaciado interno */
+  	text-align: center; /* Alineación de texto */
+  	text-decoration: none; /* Sin subrayado */
+  	display: inline-block; /* Mostrar como bloque de línea */
+  	font-size: 16px; /* Tamaño de fuente */
+  	margin: 10px; /* Margen exterior */
+  	cursor: pointer; /* Cursor en forma de mano */
+  	border-radius: 4px; /* Bordes redondeados */
+	font-weight: bold;
+}
+
+.btnRegistro:hover{
+	background-color: #006692;
+	transition: background-color 0.3s ease;
+}
+
+
+
+.login-box {
+	background-color: #E5EEF8;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+	padding: 50px 50px 20px 50px;;
+	max-width: 300px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.login-box h2 {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.inputText {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin-bottom: 20px;
+	background-color:#eeefef;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+#registro{
+	text-decoration: underline;
+	color: blue;
+}
