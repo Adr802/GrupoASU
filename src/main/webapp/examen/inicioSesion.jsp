@@ -28,7 +28,7 @@
 		<h1>Grupo Misionero Salesiano</h1>
 		<div class="login-box">
 			<h2>Iniciar sesión</h2>
-			<form method="post" action="registro.jsp">
+			<form method="post" action="verificarLogin.jsp">
 				<label for="username">Usuario:</label>
 				<input type="text" class="inputText" name="username" placeholder="Ingrese su usuario" required>
 				<label for="password">Contraseña:</label>
@@ -38,8 +38,16 @@
 				<a class="btnRegistro">REGISTRATE!</a>
 			</form>
 		</div>
-		
-		
+		<%
+		String error = request.getParameter("error");
+		if (error != null && !error.isEmpty()) {
+		%>
+		<div class="error-message">
+			<%=error%>
+		</div>
+		<%
+		}
+		%>
 	</div>
 
 	<footer>
