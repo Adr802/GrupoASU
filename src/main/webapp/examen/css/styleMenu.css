@@ -1,0 +1,68 @@
+/*DISENO DEL MENU DE USUARIO*/
+#hpagina{
+	background-color: rgb(0, 0, 0,0.899);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial;	
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    margin-right: 20px;
+}
+#hpagina a{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+}
+#hpagina nav a:hover{
+    background-color: white;
+    border-radius: 6px; 
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+#hpagina nav{
+display: flex;
+flex-direction: column;
+}
+
+#img-menu{
+	border-radius: 20px;
+	width: 600px;
+}
+.puser{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#contenedor-menu{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding-top: 100px;
+}
+#cuerpo-menu{
+	display: flex;
+	flex-direction: column;
+}
+#menu-img{
+	display: flex;
+	text-align: right;
+	margin-left: 1000px;
+	margin-top: 50px;
+}	
+#lsal{
+	width: 170px;
+	height: 160px;
+}
+#lups{
+	width: 220px;
+	height: 140px;
+	margin-left: 40px;
+	margin-right: 100px;
+}

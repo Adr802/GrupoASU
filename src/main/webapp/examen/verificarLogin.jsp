@@ -15,6 +15,7 @@
 	String nclave = request.getParameter("password");
 	boolean respuesta = usuario.verificarUsuario(nlogin, nclave);
 	if (respuesta) {
+		sesion.setAttribute("correo", usuario.getCorreo()); //Se añade atributos
 		sesion.setAttribute("usuario", usuario.getNombre()); //Se añade atributos
 		sesion.setAttribute("perfil", usuario.getPerfil()); //Se añade atributos
 		response.sendRedirect("menu.jsp"); //Se redirecciona a una página específica

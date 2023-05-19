@@ -1,11 +1,8 @@
-@charset "UTF-8";
+/*ESTILO HEADER*/
 body {
   background: linear-gradient(to bottom, #5c97d1, #f5faff);
-	font-family: arial;
 }
 
-
-/*ESTILO HEADER*/
 header{
 	display: flex;
 	flex-wrap: wrap; 
@@ -49,7 +46,6 @@ header nav{
 }
 
 
-
 #logos {
 	display: flex;
 	flex-direction: row;
@@ -67,52 +63,61 @@ header nav{
 	margin-left: 40px;
 	margin-right: 100px;
 }
-/*ESTILO CUERPO*/
 
-#cuerpo{
+.login-box {
+	background-color: rgba(229, 238, 248,0.8);
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+	padding: 50px 50px 20px 50px;;
+	max-width: 300px;
+	margin: auto;
+	margin-top: 30px;
+	box-sizing: content-box;
+}
+
+.login-box h2 {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+form {
 	display: flex;
 	flex-direction: column;
 }
-#cuerpo h1{
-	padding-left: 90px;
-	font-size: 3em;
+
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
 }
 
-.imgInicio{
-	width: 500px;
+.inputText {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin-bottom: 20px;
+	background-color:#eeefef;
 }
 
-.contenido{
-	display: flex;
-	flex-direction: row;
-	padding: 100px;
-	padding-top: 50px;
-	justify-content: center;
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
-.contenido p{
-	display:flex;
-	padding-left: 50px;
-	padding-right: 50px;
-	font-size: 1.3em;
-	text-align: justify;
+input[type="submit"]:hover {
+	background-color: #3e8e41;
 }
 
-.act-box {
-	background-color: #DBEBEE;
-	border-radius: 10px;
-	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-	padding: 50px;
-	margin: -20px 20px 20px 20px;
-	
-}
-
-
-/*ESTILO BOTON*/
-footer{
-	display: flex;
-  	flex-direction: column;
-  	align-items: center;
+#registro{
+	text-decoration: underline;
+	color: blue;
 }
 .btnRegistro{
 	background-color: #0083BC; /* Color de fondo */
@@ -133,9 +138,3 @@ footer{
 	background-color: #006692;
 	transition: background-color 0.3s ease;
 }
-
-#registro{
-	text-decoration: underline;
-	color: blue;
-}
-

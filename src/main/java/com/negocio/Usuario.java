@@ -6,7 +6,7 @@ import com.datos.*;
 public class Usuario {
 
 	private String nombre;
-	private String direccion;
+	private String correo;
 	private String login;
 	private String clave;
 	private Integer perfil;
@@ -31,6 +31,7 @@ public class Usuario {
 				this.setClave(nclave);
 				this.setPerfil(rs.getInt(6));
 				this.setNombre(rs.getString(2));
+				this.setCorreo(rs.getString(4));
 			}
 			else
 			{
@@ -45,9 +46,9 @@ public class Usuario {
 		return respuesta;
 	}
 	
-	public boolean verificarExistencia(String ced) {
+	public boolean verificarExistencia(String ced, String correo) {
 		boolean resp=true;
-		String sentencia= "Select cedula_us from tb_usuario";
+		String sentencia= "Select cedula_us,correo_us from tb_usuario";
 		try
 		{
 			ResultSet rs;
@@ -55,8 +56,7 @@ public class Usuario {
 			rs=clsCon.Consulta(sentencia);
 			while(rs.next())
 			{
-				System.out.println(rs.getString(1));
-				if(ced.equals(rs.getString(1))) {
+				if(ced.equals(rs.getString(1)) || correo.equals(rs.getString(2))) {
 					resp=false;
 				}
 			}
@@ -68,18 +68,17 @@ public class Usuario {
 		return resp;
 	}
 	
-	public void insertarUsuario(String nombre, String ced, String usuario, String clave, String edad, String correo, String direccion) {
-		String sentencia="INSERT INTO public.tb_usuario(\r\n"
-				+ "nombre_us, cedula_us, username_us, clave_us, edad_us, id_per, correo_us, direccion_us) "
+	public void insertarUsuario(String nombre, String ced, String correo, String carrera, String contra, String celular) {
+		String sentencia="INSERT INTO public.tb_usuario(nombre_us, celular_us, correo_us, clave_us, id_per, carrera_us, cedula_us)"
 				+ "values(" +"'"+ nombre + "',"
-						+"'"+ced +"',"
-						+"'"+usuario+"',"
-						+"'"+clave+"',"
-						+edad+","
-						+"2,"
+						+"'"+celular +"',"
 						+"'"+correo+"',"
-						+"'"+direccion+"'"
+						+"'"+contra+"',"
+						+"2,"
+						+"'"+carrera+"',"
+						+"'"+ced+"'"
 						+ ");";
+		System.out.println(sentencia);
 		Conexion clsCon=new Conexion();
 		String resu = clsCon.Ejecutar(sentencia);
 		System.out.println(resu);
@@ -91,11 +90,11 @@ public class Usuario {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public String getDireccion() {
-		return direccion;
+	public String getCorreo() {
+		return correo;
 	}
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
+	public void setCorreo(String direccion) {
+		this.correo = direccion;
 	}
 	public String getLogin() {
 		return login;

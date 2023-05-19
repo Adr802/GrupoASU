@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8" import="com.negocio.*"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Grupo Misionero Salesiano</title>
 <link rel="stylesheet" href="css/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
 </head>
 <body>
@@ -14,53 +15,25 @@
 		<nav>
 			<ul>
 				<li><a href="index.jsp">Inicio</a></li>
-				<li><a href="eventos.jsp" class="presionado">Eventos</a></li>
+				<li><a href="eventos.jsp" class="presionado">Actividades</a></li>
 				<li><a href="nosotros.jsp">Sobre Nosotros</a></li>
 				<li><a href="inicioSesion.jsp">Iniciar Sesion</a></li>
 			</ul>
-			<div id="linea">
-				<img alt="" src="img/linea2.png" style="padding-top:17px;width: 700px; height: 4px; padding-left: 30px;">
-			</div>
 		</nav>
+				<div id="logos">
+			<img alt="" src="img/logo_salesiano.png" id="lsal"> 
+			<img alt="" src="img/logo_ups.png" id="lups">
+		</div>
 	</header>
 
 	<div id="cuerpo">
 		<h1>Grupo Misionero Salesiano</h1>
-		<center><h2>EVENTOS</h2></center>
-		<div class="contenido">
-			<p>La fe y los valores del Evangelio son un punto de apoyo que
-				hacen posible madurar opciones de vida generosa y auténticas al
-				servicio de la Iglesia y la sociedad. Desde esta perspectiva, el
-				Grupo Misionero Salesiano procura transmitir entre los más
-				necesitados el mensaje de amor y fraternidad de Dios a través de
-				experiencias de evangelización y de promoción humana.</p>
-			<img alt="" src="img/misionero1.png" class="imgInicio">	
-		</div>
-		<div class="contenido">
-			<p>La fe y los valores del Evangelio son un punto de apoyo que
-				hacen posible madurar opciones de vida generosa y auténticas al
-				servicio de la Iglesia y la sociedad. Desde esta perspectiva, el
-				Grupo Misionero Salesiano procura transmitir entre los más
-				necesitados el mensaje de amor y fraternidad de Dios a través de
-				experiencias de evangelización y de promoción humana.</p>
-			<img alt="" src="img/misionero1.png" class="imgInicio">
-		</div>
-		<div class="contenido">
-			<p>La fe y los valores del Evangelio son un punto de apoyo que
-				hacen posible madurar opciones de vida generosa y auténticas al
-				servicio de la Iglesia y la sociedad. Desde esta perspectiva, el
-				Grupo Misionero Salesiano procura transmitir entre los más
-				necesitados el mensaje de amor y fraternidad de Dios a través de
-				experiencias de evangelización y de promoción humana.</p>
-			<img alt="" src="img/misionero1.png" class="imgInicio">
-
-		</div>
-		
+		<center><h2>Actividades</h2></center>
+		<%
+			Actividad ac = new Actividad();
+			out.print(ac.mostrarActividades());
+		%>		
 	</div>
-		
-		
-
-
 	<footer>
 	</footer>
 </body>
