@@ -17,17 +17,21 @@
 				String contra = request.getParameter("txtPass");
 				String celular = request.getParameter("txtCelular");
 				Usuario user = new Usuario();
-				boolean verificar = user.verificarExistencia(cedula);
+				boolean verificar = user.verificarExistencia(cedula,correo);
 				if(verificar){
 					user.insertarUsuario(nombre, cedula, correo, carrera, contra, celular);
 					%>
 						
-						<jsp:forward page="inicioSesion.jsp"/>
+						<jsp:forward page="inicioSesion.jsp">
+						<jsp:param name="userRegistrado" value= "Usuario registrado correctamente" />
+						</jsp:forward>
 						
 					<%
 				}else{
 					%>
-					<h3>NO PUEDE INSCRBIRSE</h3>
+					<jsp:forward page="registro.jsp" >
+					<jsp:param name="error" value= "El usuario o correo ya existe dentro del sistema" />
+					</jsp:forward>
 					<%
 				}
 				%>

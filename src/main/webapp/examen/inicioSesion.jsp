@@ -6,27 +6,41 @@
 <meta charset="UTF-8">
 <title>Grupo Misionero Salesiano</title>
 <link rel="stylesheet" href="css/styleLogin.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+	crossorigin="anonymous">
 
 </head>
-<body background="img/bosco.jpg" style="background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        background-attachment: fixed;">
+<body background="img/bosco.jpg"
+	style="background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%; background-attachment: fixed;">
 
+	<%
+	HttpSession sesion = request.getSession();
+	
+	if (sesion.getAttribute("usuario") == null) {
+	}else{
+		%>
+	
+		<jsp:forward page="menu.jsp">
+			<jsp:param name="paramName" value="paramValue" />
+		</jsp:forward>
+	<%}
+	
+	%>
 	<header>
 		<nav>
 			<ul>
 				<li><a href="index.jsp">Inicio</a></li>
 				<li><a href="eventos.jsp">Actividades</a></li>
 				<li><a href="nosotros.jsp">Sobre Nosotros</a></li>
-				<li><a href="inicioSesion.jsp" class="presionado">Iniciar
-						Sesion</a></li>
+				<li><a href="inicioSesion.jsp" class="presionado">Iniciar Sesion</a></li>
 			</ul>
 		</nav>
-				<div id="logos">
-			<img alt="" src="img/logo_salesiano.png" id="lsal"> 
-			<img alt="" src="img/logo_ups.png" id="lups">
+		<div id="logos">
+			<img alt="" src="img/logo_salesiano.png" id="lsal"> <img alt=""
+				src="img/logo_ups.png" id="lups">
 		</div>
 	</header>
 	<div id="cuerpo-login">
@@ -40,7 +54,8 @@
 					placeholder="Ingrese su contraseña" required> <input
 					type="submit" value="Iniciar sesión">
 				<p>
-					<br>¿Aun no tienes cuenta? <br> <br> <a href="registro.jsp"	class="btnRegistro">REGISTRATE!</a>
+					<br>¿Aun no tienes cuenta? <br> <br> <a
+						href="registro.jsp" class="btnRegistro">REGISTRATE!</a>
 			</form>
 		</div>
 	</div>
@@ -53,7 +68,17 @@
 		</div>
 		<%
 		}
+	%>
+	<%
+		String exito = request.getParameter("userRegistrado");
+		if (exito != null && !exito.isEmpty()) {
 		%>
+		<div class="alert alert-success" role="alert">
+			<%=exito%>
+		</div>
+		<%
+		}
+	%>
 
 	<footer> </footer>
 </body>

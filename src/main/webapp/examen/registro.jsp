@@ -5,31 +5,49 @@
 <head>
 <meta charset="UTF-8">
 <title>Registro</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+	crossorigin="anonymous">
 </head>
 <body>
+	<h2>Registro</h2>
+	<%
+		String error = request.getParameter("error");
+		if (error != null && !error.isEmpty()) {
+		%>
+		<div class="alert alert-danger" role="alert">
+			<%=error%>
+		</div>
+		<%
+		}
+		%>
 	<form action="respuesta.jsp" method="post" id="registro-form">
-		<div>
-			Nombre: <input type="text" name="txtNombre" />
-		</div>
-		<div>
-			Cédula: <input type="text" name="txtCedula" maxlength="10" />
-		</div>
-
-		<div>
-			Correo: <input type="text" name="txtCorreo" />
-		</div>
-		<div>
-			Celular: <input type="text" name="txtCelular" />
-		</div>
-		<div>
-		 	Carrera:<input type="text" name="txtCarrera" />
-		</div>
-		<div>
-			Contraseña: <input type="password" name="txtPass" />
-		</div>
-		<div>
-			<input type="submit" value="Registrarse" /> <input type="reset" />
-		</div>
+		<table>
+			<tr>
+				<td>Nombre:</td> <td><input type="text" name="txtNombre" required="required" /></td>			
+			</tr>
+			<tr>
+				<td>Cédula:</td> <td><input type="text" title="Ingrese solo valores numéricos, no se permiten letras"  pattern="[0-9]*" minlength="10" maxlength="10" name="txtCedula" required="required"/></td>			
+			</tr>
+			<tr>
+				<td>Correo:</td> <td><input type="text" pattern="[a-zA-Z0-9._%+-]+@(est\.)?ups\.edu\.ec" title="Ingrese una dirección de correo válida de la UPS" name="txtCorreo" required="required"/></td>			
+			</tr>
+			<tr>
+				<td>Celular:</td> <td><input type="text" title="Ingrese solo valores numéricos, no se permiten letras"  pattern="[0-9]*" maxlength="10" name="txtCelular" required="required"/></td>			
+			</tr>
+			<tr>
+				<td>Carrera:</td> <td><input type="text" name="txtCarrera" required="required"/></td>			
+			</tr>
+			<tr>
+				<td>Contraseña:</td> <td><input type="text" name="txtPass" required="required"/></td>			
+			</tr>
+			<tr>
+				<td><input type="submit" value="Registrarse" /></td>			
+			</tr>
+		
+		</table>
 	</form>
 </body>
 </html>

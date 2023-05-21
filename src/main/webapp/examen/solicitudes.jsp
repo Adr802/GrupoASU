@@ -10,7 +10,26 @@
 <body>
 <%
 	Postulacion p  = new Postulacion();
-	out.print("<div>" + p.tablaPostulacion()+"</div>");
+	String error = request.getParameter("resultAceptarActividad");
+	if (error != null && !error.isEmpty() && error.equals("Usuario Aceptado")) {
+	%>
+	<div class="alert alert-success" role="alert">
+		<%=error%>
+	</div>
+	<%
+	}else if(error != null && !error.isEmpty() && error.equals("Usuario rechazado")){
+		%>
+		<div class="alert alert-danger" role="alert">
+			<%=error%>
+		</div>
+		<%
+	}
+	%>
+	<%
+	out.print("<div><p>Tabla de postulaciones pendientes</p>" + p.tablaPostulacionPendiente()+"</div>");
+	out.print("<div><p>Tabla de postulaciones rechazadas</p>" + p.tablaPostulacionRechazada()+"</div>");
+	out.print("<div><p>Tabla de postulaciones aceptadas</p>" + p.tablaPostulacionAceptada()+"</div>");
+
 %>
 
 </body>

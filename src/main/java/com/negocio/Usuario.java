@@ -1,6 +1,8 @@
 package com.negocio;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import com.datos.*;
 
 public class Usuario {
@@ -78,10 +80,35 @@ public class Usuario {
 						+"'"+carrera+"',"
 						+"'"+ced+"'"
 						+ ");";
-		System.out.println(sentencia);
 		Conexion clsCon=new Conexion();
 		String resu = clsCon.Ejecutar(sentencia);
-		System.out.println(resu);
+	}
+	
+	public String mostrarMiembros() {
+		String sentencia="SELECT * FROM tb_miembros, tb_usuario where tb_miembros.ced = tb_usuario.id_us";
+		Conexion con=new Conexion();
+		ResultSet rs=null;
+		rs=con.Consulta(sentencia);
+
+		String resul = "<table class=\"table table-striped table-hover\"><th>Nombre</th><th>Correo Institucional</th><th>Carrera</th><th>Celular</th>";
+		try {
+			while(rs.next())
+			{
+
+				resul+="<tr>"
+						+ "<td><p>" + rs.getString(4) + "</p></td>"
+						+ "<td><p>" + rs.getString(6) + "</p></td>"
+						+ "<td><p>" + rs.getString(9) + "</p></td>"
+						+ "<td><p>" + rs.getString(5) + "</p></td>"
+						+"</tr>";
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.print(e.getMessage());
+		}
+		resul+="</table>";
+		return resul;
 	}
 	
 	public String getNombre() {

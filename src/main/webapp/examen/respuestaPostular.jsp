@@ -10,8 +10,19 @@
 		<%
 			HttpSession sesion = request.getSession();
 			Postulacion p = new Postulacion((String)sesion.getAttribute("correo"));
-			out.print(sesion.getAttribute("correo"));
-			p.newPostulacion();
-		%>
+			if(p.newPostulacion()){
+				%>
+					<jsp:forward page="postular.jsp">
+					<jsp:param name="exito" value= "Postulacion registrada correctamente" />
+					</jsp:forward>
+				<%
+			}else{
+				%>
+					<jsp:forward page="postular.jsp">
+					<jsp:param name="error" value= "Este usuario ya tiene una postulacion activa o ya fue aceptado" />
+					</jsp:forward>
+				<%
+			}
+		%>				
 </body>
 </html>

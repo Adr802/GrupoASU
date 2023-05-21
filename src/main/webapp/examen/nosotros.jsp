@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8" import="com.negocio.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,9 +52,12 @@
 			</div>
 		</div>
 		
+		<div>
+		<a href="miembros.jsp">Ver miembros activos del grupo ASU</a>
 		
+		</div>
 	</div>
-
+	
 	<footer>
 	</footer>
 </body>
