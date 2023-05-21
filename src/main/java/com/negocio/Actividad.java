@@ -27,14 +27,14 @@ public class Actividad {
 		ResultSet rs=null;
 		rs=con.Consulta(sentencia);
 
-		String resul = "<table>";
+		String resul = "<div id = \"tabla-Actividad\" ><table>";
 		try {
 			while(rs.next())
 			{
 
 				resul+="<tr>"
 						+ "<td>"
-						+ "<p>" + rs.getString(2) + "</p>"
+						+ "<p id=\"titulo-act\">" + rs.getString(2) + "</p>"
 						+ "<p>" + rs.getString(3) + "</p>"
 						+ "</td>"
 						+ "<td>"
@@ -47,14 +47,14 @@ public class Actividad {
 			e.printStackTrace();
 			System.out.print(e.getMessage());
 		}
-		resul+="</table>";
+		resul+="</table></div>";
 		return resul;
 	}
 
 	public String mostrarEditarActividades() {
 		String sql="SELECT * FROM tb_actividades ORDER BY id_act";
 		Conexion con=new Conexion();
-		String tabla="<table class=\"table table-striped table-hover\"><th>ID Actividad</th><th>Nombre de la actividad</th><th></th><th></th>";
+		String tabla="<table class=\"table table-hover\" id=\"editar-table\"><th>ID Actividad</th><th>Nombre de la actividad</th><th></th><th></th>";
 		ResultSet rs=null;
 		rs=con.Consulta(sql);
 		try {

@@ -27,7 +27,7 @@
 	</header>
 
 	<div id="cuerpo">
-		<h1>Grupo Misionero Salesiano</h1>
+		<center><h1>Grupo Misionero Salesiano</h1></center>
 		<div id="carouselExampleIndicators" class="carousel slide">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carouselExampleIndicators"
@@ -40,13 +40,13 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="img/bosco.jpg" class="d-block w-100" alt="..." width="500px">
+					<img src="img/bosco.jpg" class="d-block w-100" alt="..." width="100px" height="620px">
 				</div>
 				<div class="carousel-item">
-					<img src="img/misionero1.png" class="d-block w-100" alt="..." width="500px">
+					<img src="img/misionero1.png" class="d-block w-100" alt="..." width="100px" height="620px">
 				</div>
 				<div class="carousel-item">
-					<img src="img/misionero1.png" class="d-block w-100" alt="..." width="500px">
+					<img src="img/misionero1.png" class="d-block w-100" alt="..." width="100px" height="620px">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button"

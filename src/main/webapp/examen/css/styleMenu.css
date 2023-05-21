@@ -1,6 +1,76 @@
+/*ESTILO HEADER*/
+html{
+	height: 100%;
+}
+body {
+  background: linear-gradient(to bottom, #5c97d1, #f5faff); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header{
+	display: flex;
+	flex-wrap: wrap; 
+	width:100%;
+	justify-content: space-between;
+	margin-top: 20px;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+header ul{
+	display: flex;
+	list-style: none;
+	margin-left: 40px;	
+}
+header a{
+	text-decoration: none;
+}
+
+header a{
+	padding: 15px;
+	border-radius: 10px;
+	background-color:#E5EAEA;
+	margin-right: 40px;
+	color: black;
+}
+a:hover{
+	background-color: #adceee;
+}
+
+.presionado{
+	background-color: #0083BC;
+	color: white;
+}
+.presionado:hover{
+	background-color: #0083BC;
+	color: white;
+}
+header nav{
+	display: flex;
+}
+
+
+
+#logos {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-between;
+	margin-right: 200px;
+}
+#lsal{
+	width: 70px;
+	height: 60px;
+}
+#lups{
+	width: 120px;
+	height: 60px;
+	margin-left: 40px;
+	margin-right: 100px;
+}
 /*DISENO DEL MENU DE USUARIO*/
 #hpagina{
-	background-color: rgb(0, 0, 0,0.899);
+	background-color: rgb(0, 0, 0,0.95);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +114,7 @@ flex-direction: column;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	padding-top: 100px;
+	padding-top: 50px;
 }
 #cuerpo-menu{
 	display: flex;
@@ -56,13 +126,49 @@ flex-direction: column;
 	margin-left: 1000px;
 	margin-top: 50px;
 }	
-#lsal{
-	width: 170px;
-	height: 160px;
+
+#div-post{
+	display: flex;
+	flex-direction: column;	
+	background-color: rgb(255, 255, 255,0.95);
+    justify-content: center;
+    font-family: Arial;	
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    margin-right: 20px;
 }
-#lups{
-	width: 220px;
-	height: 140px;
-	margin-left: 40px;
-	margin-right: 100px;
+
+/*TABLA EDITAR ACTIVIDADES*/
+#editar-table{
+  background: linear-gradient(to bottom, #ffffff, #f5faff);
+  border-radius: 5px;
+  width: 700px;
+}
+#divEditarAct{
+	margin-left: 80px;
+}
+#divEditarAct h3{
+	font-size: 1.8em;
+	font-weight: bold;	
+}
+
+
+#divEditarAct button{
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	background-color: #5c97d1;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#divEditarAct button:hover{
+  	background-color: #4076a5;
 }

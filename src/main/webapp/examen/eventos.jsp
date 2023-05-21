@@ -28,7 +28,7 @@
 
 	<div id="cuerpo">
 		<h1>Grupo Misionero Salesiano</h1>
-		<center><h2>Actividades</h2></center>
+		<center><h2 id="h2tit">Actividades</h2></center>
 		<%
 			Actividad ac = new Actividad();
 			out.print(ac.mostrarActividades());

@@ -25,13 +25,13 @@
 			<img alt="" src="img/logo_ups.png" id="lups">
 		</div>
 	</header>
-<p>MIEMBROS DEL GRUPO ASU</p>
+	<div id="miembros-div">
+	<p id = "tit-miembros">MIEMBROS DEL GRUPO ASU</p>
 		<%
 			Usuario ac = new Usuario();
 			out.print(ac.mostrarMiembros());
-		%>		
-
-	
+		%>	
+	</div>
 	<footer>
 	</footer>
 </body>

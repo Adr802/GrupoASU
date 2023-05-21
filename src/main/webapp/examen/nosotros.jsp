@@ -28,33 +28,35 @@
 
 	<div id="cuerpo">
 		<h1>Grupo Misionero Salesiano</h1>
-		<center><h2>SOBRE NOSOTROS</h2></center>
-		<div class="contenido">
-			<img alt="" src="img/misionero1.png" class="imgInicio">
-			<div id="contactos">
-				<p><b>ANIMADOR</b></p>
-				<p>Pablo Mallamas</p>
-				<p>Dirección de Pastoral Universitaria - Sede Quito</p>
-				<p><strong>Correo Institucional: </strong> pmallamas@ups.edu.ec</p>
-				<p><strong>Télefono Institucional: </strong>(+593) 3962 800 / 3262 900 – ext: 2398</p>	
-				<br>
-				<p><b>COORDINADOR</b></p>
-				<p>Luis Valdiviezo</p>
-				<p>Estudiante de la Carrera de Ingeniería en Telecomunicaciones</p>
-				<p><strong>Correo Institucional: </strong> lvaldiviezom@est.ups.edu.ec</p>
-				<p><strong>Télefono Institucional: </strong>(+593)</p>
-				<br>
-				<p><b>DESARROLLADOR</b></p>
-				<p>Jhosue Villacres</p>
-				<p><a href="https://github.com/Adr802">Github</a></p>
-				<p><a href="https://www.linkedin.com/in/adrian-villacres-153b1722b/">Linkedin</a></p>
-				<p><strong>Correo Institucional: </strong> jvillacresp2@est.ups.edu.ec</p>
+		<center><h2 id="h2tit">SOBRE NOSOTROS</h2></center>
+		<div id="centrar-nosotros">
+			<div class="contenido">
+				<img alt="" src="img/misionero1.png" class="imgInicio">
+				<div id="contactos">
+					<p><b>ANIMADOR</b></p>
+					<p>Pablo Mallamas</p>
+					<p>Dirección de Pastoral Universitaria - Sede Quito</p>
+					<p><strong>Correo Institucional: </strong> pmallamas@ups.edu.ec</p>
+					<p><strong>Télefono Institucional: </strong>(+593) 3962 800 / 3262 900 – ext: 2398</p>	
+					<br>
+					<p><b>COORDINADOR</b></p>
+					<p>Luis Valdiviezo</p>
+					<p>Estudiante de la Carrera de Ingeniería en Telecomunicaciones</p>
+					<p><strong>Correo Institucional: </strong> lvaldiviezom@est.ups.edu.ec</p>
+					<p><strong>Télefono Institucional: </strong>(+593)</p>
+					<br>
+					<p><b>DESARROLLADOR</b></p>
+					<p>Jhosue Villacres</p>
+					<p><a href="https://github.com/Adr802" target="_blank">Github</a></p>
+					<p><a href="https://www.linkedin.com/in/adrian-villacres-153b1722b/" target="_blank">Linkedin</a></p>
+					<p><strong>Correo Institucional: </strong> jvillacresp2@est.ups.edu.ec</p>
+				</div>
 			</div>
-		</div>
+			
+			<div>
 		
-		<div>
-		<a href="miembros.jsp">Ver miembros activos del grupo ASU</a>
-		
+			<a href="miembros.jsp" class="btnRegistro">Ver miembros activos del grupo ASU</a>
+			</div>
 		</div>
 	</div>
 	

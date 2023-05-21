@@ -18,16 +18,16 @@
 
 	<%
 	HttpSession sesion = request.getSession();
-	
+
 	if (sesion.getAttribute("usuario") == null) {
-	}else{
-		%>
-	
-		<jsp:forward page="menu.jsp">
-			<jsp:param name="paramName" value="paramValue" />
-		</jsp:forward>
-	<%}
-	
+	} else {
+	%>
+
+	<jsp:forward page="menu.jsp">
+		<jsp:param name="paramName" value="paramValue" />
+	</jsp:forward>
+	<%
+	}
 	%>
 	<header>
 		<nav>
@@ -35,7 +35,8 @@
 				<li><a href="index.jsp">Inicio</a></li>
 				<li><a href="eventos.jsp">Actividades</a></li>
 				<li><a href="nosotros.jsp">Sobre Nosotros</a></li>
-				<li><a href="inicioSesion.jsp" class="presionado">Iniciar Sesion</a></li>
+				<li><a href="inicioSesion.jsp" class="presionado">Iniciar
+						Sesion</a></li>
 			</ul>
 		</nav>
 		<div id="logos">
@@ -46,6 +47,26 @@
 	<div id="cuerpo-login">
 		<div class="login-box">
 			<h2>Iniciar sesión</h2>
+			<%
+			String error = request.getParameter("error");
+			if (error != null && !error.isEmpty()) {
+			%>
+			<div class="alert alert-danger" role="alert">
+				<%=error%>
+			</div>
+			<%
+			}
+			%>
+			<%
+			String exito = request.getParameter("userRegistrado");
+			if (exito != null && !exito.isEmpty()) {
+			%>
+			<div class="alert alert-success" role="alert">
+				<%=exito%>
+			</div>
+			<%
+			}
+			%>
 			<form method="post" action="verificarLogin.jsp">
 				<label for="username">Usuario:</label> <input type="text"
 					class="inputText" name="username" placeholder="Ingrese su usuario"
@@ -59,26 +80,6 @@
 			</form>
 		</div>
 	</div>
-	<%
-		String error = request.getParameter("error");
-		if (error != null && !error.isEmpty()) {
-		%>
-		<div class="alert alert-danger" role="alert">
-			<%=error%>
-		</div>
-		<%
-		}
-	%>
-	<%
-		String exito = request.getParameter("userRegistrado");
-		if (exito != null && !exito.isEmpty()) {
-		%>
-		<div class="alert alert-success" role="alert">
-			<%=exito%>
-		</div>
-		<%
-		}
-	%>
 
 	<footer> </footer>
 </body>

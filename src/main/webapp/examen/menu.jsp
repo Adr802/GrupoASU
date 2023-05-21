@@ -7,13 +7,25 @@
 <title>Grupo Misionero Salesiano</title>
 <!--Enlace css-->
 <link rel="stylesheet" href="css/styleMenu.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
 </head>
 
-<body background="img/bosco.jpg" style="background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        background-attachment: fixed;">
+<body >
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.jsp">Inicio</a></li>
+				<li><a href="eventos.jsp">Actividades</a></li>
+				<li><a href="nosotros.jsp">Sobre Nosotros</a></li>
+				<li><a href="inicioSesion.jsp" class="presionado">Menu</a></li>
+			</ul>
+		</nav>
+		<div id="logos">
+			<img alt="" src="img/logo_salesiano.png" id="lsal"> <img alt=""
+				src="img/logo_ups.png" id="lups">
+		</div>
+	</header>
 	<main>
 		<%
 		String usuario = "";
@@ -31,9 +43,7 @@
 			Pagina pag = new Pagina();
 			String menu = pag.mostrarMenu(perfil);
 			out.print("<div id=\"cuerpo-menu\"><div id=\"contenedor-menu\"><div id=\"hpagina\"><p class=\"puser\">Bienvenido "+usuario+"</h3>"+menu+"</div>" +
-					  "<img src=\"img/misionero1.png\" id=\"img-menu\"></div>"
-					  +"<div id=\"menu-img\"><img alt=\"\" src=\"img/logo_salesiano.png\" id=\"lsal\">" 
-					  +	"<img alt=\"\" src=\"img/logo_ups.png\" id=\"lups\"></div></div>");
+					  "<img src=\"img/misionero1.png\" id=\"img-menu\"></div>");
 		}
 		%>
 	</main>

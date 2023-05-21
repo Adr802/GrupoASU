@@ -1,7 +1,8 @@
 @charset "UTF-8";
+
 body {
   background: linear-gradient(to bottom, #5c97d1, #f5faff);
-	font-family: arial;
+  
 }
 
 
@@ -107,6 +108,102 @@ header nav{
 	
 }
 
+/*ESTILO DE LA PANTALLA ACTIVIDADES*/
+#tabla-Actividad{
+	padding-right: 200px;
+	padding-left: 200px;	
+}
+#tabla-Actividad p{
+	text-align: justify;
+	padding-right: 40px;
+}
+#tabla-Actividad img{
+	border-radius: 20px;
+	padding-bottom: 10px;
+}
+#titulo-act{
+	font-size: 1.6em;	
+	font-weight: bold;
+}
+#h2tit{
+	font-size: 2.6em;
+	font-weight: bold;
+	padding: 50px;
+}
+
+/*ESTILO SOBRE NOSOTROS*/
+#centrar-nosotros{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  	align-items: center;
+}
+#btn-miembros{
+	text-decoration: none;
+	color:white;
+}
+
+/*ESTILOS DE LOS MIEMBROS*/
+#miembros-div {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#tit-miembros{
+	margin-left: 500px;
+	font-weight: bold;
+	font-size: 1.6em;	
+}
+
+
+
+/*ESTILO REGISTRO*/
+#contenedor-reg{
+	display:flex;
+	justify-content: center;
+	margin-bottom: 223px;
+}
+.card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  width: 400px;
+}
+
+.card-header {
+  background-color: #5c97d1;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 10px;
+}
+
+#registro-form table td {
+	padding-top: 10px;
+}
+.alert {
+  margin-top: 10px;
+}
+
+#btnreg{
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espacio interno (vertical, horizontal) */
+  text-align: center; /* Alineación del texto al centro */
+  text-decoration: none; /* Sin decoración de texto */
+  display: inline-block; /* Mostrar como un bloque en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Cambio de color al pasar el cursor por encima */
+#btnreg:hover{
+  background-color: #45a049; /* Nuevo color de fondo */
+}
+
 
 /*ESTILO BOTON*/
 footer{
@@ -127,6 +224,7 @@ footer{
   	cursor: pointer; /* Cursor en forma de mano */
   	border-radius: 4px; /* Bordes redondeados */
 	font-weight: bold;
+	margin-bottom: 50px;
 }
 
 .btnRegistro:hover{
