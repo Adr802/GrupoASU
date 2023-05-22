@@ -18,7 +18,7 @@
 				<li><a href="index.jsp">Inicio</a></li>
 				<li><a href="eventos.jsp">Actividades</a></li>
 				<li><a href="nosotros.jsp">Sobre Nosotros</a></li>
-				<li><a href="inicioSesion.jsp" class="presionado">Menu</a></li>
+				<li><a href="inicioSesion.jsp" class="presionado">Menu de usuario</a></li>
 			</ul>
 		</nav>
 		<div id="logos">

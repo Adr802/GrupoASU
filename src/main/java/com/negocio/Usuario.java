@@ -90,7 +90,7 @@ public class Usuario {
 		ResultSet rs=null;
 		rs=con.Consulta(sentencia);
 
-		String resul = "<table class=\"table table-striped table-hover\"><th>Nombre</th><th>Correo Institucional</th><th>Carrera</th><th>Celular</th>";
+		String resul = "<table class=\"table table-striped table-hover\" id=\"tabla-miembros\"><th>Nombre</th><th>Correo Institucional</th><th>Carrera</th><th>Celular</th>";
 		try {
 			while(rs.next())
 			{

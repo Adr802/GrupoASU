@@ -20,7 +20,7 @@
 				<li><a href="index.jsp">Inicio</a></li>
 				<li><a href="eventos.jsp">Actividades</a></li>
 				<li><a href="nosotros.jsp">Sobre Nosotros</a></li>
-				<li><a href="inicioSesion.jsp" class="presionado">Menu</a></li>
+				<li><a href="inicioSesion.jsp" class="presionado">Menu de usuario</a></li>
 			</ul>
 		</nav>
 		<div id="logos">
@@ -60,17 +60,16 @@
 			respuesta = eliminar;
 			tipoDiv = "class=\"alert alert-danger\"  role=\"alert\"";
 		}
-		out.print("<div id=\"cuerpo-menu\"><div id=\"contenedor-menu\"><div id=\"hpagina\"><p class=\"puser\">Bienvenido "
-				+ usuario + "</h3>" + menu + "</div>"
+		out.print("<div id=\"centrarAct\">"
 				+ "<div id = \"divEditarAct\">" 
-				+ "<div " + tipoDiv + ">"
-				+ respuesta + "</div>"
+				+ "<h2>Gestion de actividades</h2>"
 				+ "<h3>Actividades dentro de la base de datos</h3>"
 				+ ac.mostrarEditarActividades()
 				+ "<a href=\"agregarAct.jsp\">"
 				+ "<button>Nueva actividad</button>"
 				+ "</a>"
-	
+				+ "<div " + tipoDiv + "style=\"margin-top: 30px;\">"
+				+ respuesta + "</div>"
 				+"</div></div>");
 		}
 		%>

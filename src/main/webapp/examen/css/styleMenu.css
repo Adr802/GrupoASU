@@ -1,55 +1,59 @@
 /*ESTILO HEADER*/
-html{
+html {
 	height: 100%;
 }
+
 body {
-  background: linear-gradient(to bottom, #5c97d1, #f5faff); 
-  background-repeat: no-repeat;
-  background-size: cover;
+	background: linear-gradient(to bottom, #5c97d1, #f5faff);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-header{
+
+header {
 	display: flex;
-	flex-wrap: wrap; 
-	width:100%;
+	flex-wrap: wrap;
+	width: 100%;
 	justify-content: space-between;
 	margin-top: 20px;
-	padding-top:10px;
+	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-header ul{
+header ul {
 	display: flex;
 	list-style: none;
-	margin-left: 40px;	
+	margin-left: 40px;
 }
-header a{
+
+header a {
 	text-decoration: none;
 }
 
-header a{
+header a {
 	padding: 15px;
 	border-radius: 10px;
-	background-color:#E5EAEA;
+	background-color: #E5EAEA;
 	margin-right: 40px;
 	color: black;
 }
-a:hover{
+
+a:hover {
 	background-color: #adceee;
 }
 
-.presionado{
+.presionado {
 	background-color: #0083BC;
 	color: white;
 }
-.presionado:hover{
+
+.presionado:hover {
 	background-color: #0083BC;
 	color: white;
 }
-header nav{
+
+header nav {
 	display: flex;
 }
-
-
 
 #logos {
 	display: flex;
@@ -58,105 +62,114 @@ header nav{
 	justify-content: space-between;
 	margin-right: 200px;
 }
-#lsal{
+
+#lsal {
 	width: 70px;
 	height: 60px;
 }
-#lups{
+
+#lups {
 	width: 120px;
 	height: 60px;
 	margin-left: 40px;
 	margin-right: 100px;
 }
 /*DISENO DEL MENU DE USUARIO*/
-#hpagina{
-	background-color: rgb(0, 0, 0,0.95);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: Arial;	
-    height: 400px;
-    width: 500px;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
-    margin-right: 20px;
+#hpagina {
+	background-color: rgb(46, 37, 143, 0.66);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: Arial;
+	height: 300px;
+	width: 400px;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0px 0px 20px rgb(0, 0, 0);
+	margin-right: 20px;
 }
-#hpagina a{
+
+#hpagina a {
 	text-decoration: none;
 	color: white;
 	padding: 10px;
 }
-#hpagina nav a:hover{
-    background-color: white;
-    border-radius: 6px; 
-    padding: 10px;
-    color: rgb(0, 0, 0);
-}
-#hpagina nav{
-display: flex;
-flex-direction: column;
+
+#hpagina nav a:hover {
+	background-color: white;
+	border-radius: 6px;
+	padding: 10px;
+	color: rgb(0, 0, 0);
 }
 
-#img-menu{
+#hpagina nav {
+	display: flex;
+	flex-direction: column;
+}
+
+#img-menu {
 	border-radius: 20px;
 	width: 600px;
 }
-.puser{
+
+.puser {
 	text-align: center;
 	color: white;
 	font-weight: bold;
 	font-size: 1.1em;
 }
 
-#contenedor-menu{
+#contenedor-menu {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	padding-top: 50px;
 }
-#cuerpo-menu{
+
+#cuerpo-menu {
 	display: flex;
 	flex-direction: column;
 }
-#menu-img{
+
+#menu-img {
 	display: flex;
 	text-align: right;
 	margin-left: 1000px;
 	margin-top: 50px;
-}	
+}
 
-#div-post{
+#div-post {
 	display: flex;
-	flex-direction: column;	
-	background-color: rgb(255, 255, 255,0.95);
-    justify-content: center;
-    font-family: Arial;	
-    height: 400px;
-    width: 500px;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
-    margin-right: 20px;
+	flex-direction: column;
+	background-color: rgb(255, 255, 255, 0.95);
+	justify-content: center;
+	font-family: Arial;
+	height: 400px;
+	width: 500px;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0px 0px 20px rgb(0, 0, 0);
+	margin-right: 20px;
 }
 
 /*TABLA EDITAR ACTIVIDADES*/
-#editar-table{
-  background: linear-gradient(to bottom, #ffffff, #f5faff);
-  border-radius: 5px;
-  width: 700px;
+#editar-table {
+	background: linear-gradient(to bottom, #ffffff, #f5faff);
+	border-radius: 5px;
+	width: 700px;
 }
-#divEditarAct{
+
+#divEditarAct {
 	margin-left: 80px;
 }
-#divEditarAct h3{
-	font-size: 1.8em;
-	font-weight: bold;	
+
+#divEditarAct h3 {
+	font-size: 1.6em;
+	margin-bottom: 20px;
 }
 
-
-#divEditarAct button{
+#divEditarAct button {
 	display: inline-block;
 	padding: 10px 20px;
 	font-size: 16px;
@@ -169,6 +182,136 @@ flex-direction: column;
 	border-radius: 4px;
 	cursor: pointer;
 }
-#divEditarAct button:hover{
-  	background-color: #4076a5;
+
+#divEditarAct button:hover {
+	background-color: #4076a5;
+}
+
+#divEditarAct {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+}
+
+#divEditarAct h2 {
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/*ESTILO SOLICITUDES*/
+.div-espacio {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.div-espacio p {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.tablasPost {
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.tablasPost table {
+	background-color: white;
+}
+
+/*ESTILO INGRESAR ACTIVIDAD*/
+.ingreso-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.div-Ingreso {
+	margin-left: 400px;
+	margin-right: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.div-Ingreso h1 {
+	margin-bottom: 30px;
+}
+
+.registration-card {
+	background-color: #f8f8f8;
+	border-radius: 10px;
+	padding: 30px;
+	width: 400px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.registration-card .form-group {
+	margin-bottom: 15px;
+}
+
+.registration-card label {
+	display: block;
+	font-weight: bold;
+}
+
+.registration-card input[type="text"], .registration-card input[type="file"],
+	.registration-card input[type="submit"] {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.registration-card input[type="submit"] {
+	background-color: #5c97d1;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.registration-card input[type="submit"]:hover {
+	background-color: #4a82b9;
+}
+
+.inDesc {
+	height: 200px;
+	width: 100%;
+	box-sizing: border-box;
+	padding-top: 0;
+	vertical-align: top;
+}
+
+/*ESTILO MODIFICAR ACTIVIDAD*/
+.card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card table {
+  width: 100%;
+}
+
+.card table td:first-child {
+  width: 120px;
+}
+
+.card input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.card input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }

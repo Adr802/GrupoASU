@@ -237,3 +237,8 @@ footer{
 	color: blue;
 }
 
+/*TABLA MIEMBROS*/
+#tabla-miembros{
+	background-color: white;	
+	border-radius: 20px;
+}

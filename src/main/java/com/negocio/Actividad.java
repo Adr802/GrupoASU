@@ -45,7 +45,6 @@ public class Actividad {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			System.out.print(e.getMessage());
 		}
 		resul+="</table></div>";
 		return resul;
@@ -70,7 +69,6 @@ public class Actividad {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			System.out.print(e.getMessage());
 		}
 		tabla+="</table>";
 		return tabla;
@@ -109,7 +107,6 @@ public class Actividad {
 			// TODO: handle exception
 			agregado=false;
 		}
-		System.out.println(sql);
 		return agregado;
 	}
 	

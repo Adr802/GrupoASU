@@ -119,8 +119,8 @@ public class Postulacion {
 						+ "<td>"+rs.getString(2)+"</td>"
 						+ "<td>"+rs.getString(4)+"</td>"
 						+ "<td>"+estado+"</td>"
-						+ "<td> <a href= aceptarPos.jsp?cod=" + rs.getInt(1) +"><pre style=\"text-align: center\">Aceptar</pre></a></td>"
-						+ "<td> <a href= rechazarPos.jsp?cod=" + rs.getInt(1) + " \"><pre style=\"text-align: center\">Rechazar</pre></a></td>"
+						+ "<td> <a href= aceptarPos.jsp?cod=" + rs.getInt(1) +"><img src=\"img/aceptar.png\" alt=\"Aceptar\" width=25></a></td>"
+						+ "<td> <a href= rechazarPos.jsp?cod=" + rs.getInt(1) +"><img src=\"img/rechazar.png\" alt=\"Rechazar\" width=25></a></td>"
 						+ "</td></tr>";
 			}
 		} catch (SQLException e) {
