@@ -91,7 +91,7 @@ public class Actividad {
 		try {
 			while(rs.next())
 			{
-				tempFile = new File(ruta+"\\imgEvento"+cont+".jpg");
+				tempFile = new File(ruta+"\\actividad"+cont+".jpg");
 				fos = new FileOutputStream(tempFile);
 				byte[] foto = rs.getBytes("img_byte");
 				fos.write(foto); 
@@ -104,7 +104,7 @@ public class Actividad {
 						+ "</td>"
 						+ "<td>"
 						
-						+ "<img src='temporales/imgEvento"+cont+".jpg' alt='Imagen de la actividad' width='150px' height='auto' class=\"imgInicio\">"
+						+ "<img src='temporales/actividad"+cont+".jpg' alt='Imagen de la actividad' width='150px' height='300px' class=\"imgInicio\">"
 						+ "</td>"
 						+"</tr>";
 				cont++;
