@@ -71,6 +71,8 @@
 				+ "<p>Hoja de vida</p>"
 				+ "<input type=\"file\"> <br> <input type=\"submit\">"
 				+ "</form>"
+				+ "<div>" + us.getEstado((String)sesion.getAttribute("correo"))
+				+ "</div>"
 				+ "<div " + tipoDiv + ">"
 				+ respuesta
 				+"</div></div>"

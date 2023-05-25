@@ -40,8 +40,9 @@
 						type="text" name="txtNombre" required="required" id="inNombre">
 				</div>
 				<div class="form-group">
-					<label for="inDesc">Descripción:</label> <input type="text"
-						name="txtDesc" required="required" class="inDesc">
+					<label for="inDesc">Descripción:</label>
+<textarea name="txtDesc" required="required" class="inDesc"></textarea>
+
 				</div>
 				<div class="form-group">
 					<label for="inFoto">Foto:</label> <input type="file" name="foto" accept="image/jpg" id="inFoto">

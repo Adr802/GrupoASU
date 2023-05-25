@@ -48,8 +48,8 @@
 					</tr>
 					<tr>
 						<td>Descripcion:</td>
-						<td><input type="text" name="editardesc"
-							value="<%=mp.getDescripcion()%>" class="inDesc"/></td>
+						<td><textarea name="editardesc" class="inDesc"><%=mp.getDescripcion()%></textarea></td>
+
 					</tr>
 				</table>
 				<br> <br> <input type="submit" name="Actualizar"
