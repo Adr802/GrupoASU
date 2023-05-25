@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8" import="com.negocio.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,8 +21,8 @@
 			</ul>
 		</nav>
 		<div id="logos">
-			<img alt="" src="img/logo_salesiano.png" id="lsal"> <img alt=""
-				src="img/logo_ups.png" id="lups">
+			<img alt="Logo de la Del grupo misionero salesiano" src="img/logo_salesiano.png" id="lsal"> 
+			<img alt="Logo de la Universidad Politecnica Salesiana" src="img/logo_ups.png" id="lups">
 		</div>
 	</header>
 
@@ -40,13 +40,13 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="img/bosco.jpg" class="d-block w-100" alt="..." width="100px" height="620px">
+					<img src="img/bosco.jpg" class="d-block w-100" alt="Imagen de Don Bosco" width="100px" height="620px">
 				</div>
 				<div class="carousel-item">
-					<img src="img/misionero1.png" class="d-block w-100" alt="..." width="100px" height="620px">
+					<img src="img/misionero3.png" class="d-block w-100" alt="Grupo de personas posando" width="100px" height="620px">
 				</div>
 				<div class="carousel-item">
-					<img src="img/misionero1.png" class="d-block w-100" alt="..." width="100px" height="620px">
+					<img src="img/misionero4.png" class="d-block w-100" alt="Grupo de personas posando" width="100px" height="620px">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button"
@@ -60,53 +60,12 @@
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-
-		<div class="contenido">
-			<img alt="" src="img/misionero1.png" class="imgInicio">
-			<div>
-				<p>Descripcion
-				<p>
-				<p>La fe y los valores del Evangelio son un punto de apoyo que
-					hacen posible madurar opciones de vida generosa y auténticas al
-					servicio de la Iglesia y la sociedad. Desde esta perspectiva, el
-					Grupo Misionero Salesiano procura transmitir entre los más
-					necesitados el mensaje de amor y fraternidad de Dios a través de
-					experiencias de evangelización y de promoción humana.</p>
-			</div>
-
-		</div>
-		<div class="contenido">
-			<div>
-				<p>Historia
-				<p>
-				<p>La fe y los valores del Evangelio son un punto de apoyo que
-					hacen posible madurar opciones de vida generosa y auténticas al
-					servicio de la Iglesia y la sociedad. Desde esta perspectiva, el
-					Grupo Misionero Salesiano procura transmitir entre los más
-					necesitados el mensaje de amor y fraternidad de Dios a través de
-					experiencias de evangelización y de promoción humana.</p>
-			</div>
-			<img alt="" src="img/misionero1.png" class="imgInicio">
-		</div>
-		<div class="contenido">
-			<div class="act-box">
-				<p>Actividades</p>
-				<ul>
-					<li>Encuentros Formativos Semanales</li>
-					<li>Misiones de Semana Santa (abril)</li>
-					<li>Misiones de Verano (agosto)</li>
-					<li>Misiones de Navidad (diciembre)</li>
-				</ul>
-			</div>
-			<div class="act-box">
-				<p>Horarios</p>
-				<ul>
-					<li>Sábados. 17:00-18:00</li>
-
-				</ul>
-			</div>
-		</div>
-
+		
+		<%
+			Actividad ac = new Actividad();
+			out.print(ac.mostrarIndex());
+		%>
+		
 
 	</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

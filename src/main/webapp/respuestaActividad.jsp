@@ -11,7 +11,9 @@
 	Actividad mp = new Actividad();
 	String nombre = request.getParameter("txtNombre");
 	String desc = request.getParameter("txtDesc");
-	if(mp.agregarActividad(nombre, desc)){
+	String img = request.getParameter("foto");
+	
+	if(mp.agregarActividad(nombre, desc, img)){
 		%>
 			<jsp:forward page="gestionAct.jsp" >
 <jsp:param name="resultNewActividad" value="Nueva Actividad Agregada" />

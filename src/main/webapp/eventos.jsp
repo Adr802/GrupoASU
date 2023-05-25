@@ -15,22 +15,24 @@
 		<nav>
 			<ul>
 				<li><a href="index.jsp">Inicio</a></li>
-				<li><a href="eventos.jsp">Actividades</a></li>
-				<li><a href="nosotros.jsp"  class="presionado">Sobre Nosotros</a></li>
+				<li><a href="eventos.jsp" class="presionado">Actividades</a></li>
+				<li><a href="nosotros.jsp">Sobre Nosotros</a></li>
 				<li><a href="inicioSesion.jsp">Iniciar Sesion</a></li>
 			</ul>
 		</nav>
 				<div id="logos">
-			<img alt="" src="img/logo_salesiano.png" id="lsal"> 
-			<img alt="" src="img/logo_ups.png" id="lups">
+			<img alt="Logo de la Del grupo misionero salesiano" src="img/logo_salesiano.png" id="lsal"> 
+			<img alt="Logo de la Universidad Politecnica Salesiana" src="img/logo_ups.png" id="lups">
 		</div>
 	</header>
-	<div id="miembros-div">
-	<p id = "tit-miembros">MIEMBROS DEL GRUPO ASU</p>
+
+	<div id="cuerpo">
+		<h1>Grupo Misionero Salesiano</h1>
+		<center><h2 id="h2tit">Actividades</h2></center>
 		<%
-			Usuario ac = new Usuario();
-			out.print(ac.mostrarMiembros());
-		%>	
+			Actividad ac = new Actividad();
+			out.print(ac.mostrarActividades());
+		%>		
 	</div>
 	<footer>
 	</footer>

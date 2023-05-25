@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="UTF-8" import="com.negocio.cargarImagen"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,7 +34,7 @@
 		<h1>Ingresar nueva actividad</h1>
 
 		<div class="registration-card">
-			<form method="post" action="respuestaActividad.jsp" id="tar-act">
+			<form action="cargarImagen" method="post" enctype="multipart/form-data"  id="tar-act">
 				<div class="form-group">
 					<label for="inNombre">Nombre de la actividad:</label> <input
 						type="text" name="txtNombre" required="required" id="inNombre">
@@ -44,7 +44,7 @@
 						name="txtDesc" required="required" class="inDesc">
 				</div>
 				<div class="form-group">
-					<label for="inFoto">Foto:</label> <input type="file" id="inFoto">
+					<label for="inFoto">Foto:</label> <input type="file" name="foto" accept="image/jpg" id="inFoto">
 				</div>
 				<div class="form-group">
 					<input type="submit" value="Agregar" class="btn-ingresar">

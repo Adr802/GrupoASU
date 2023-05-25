@@ -22,8 +22,8 @@
 			</ul>
 		</nav>
 		<div id="logos">
-			<img alt="" src="img/logo_salesiano.png" id="lsal"> <img alt=""
-				src="img/logo_ups.png" id="lups">
+			<img alt="Logo de la Del grupo misionero salesiano" src="img/logo_salesiano.png" id="lsal"> 
+			<img alt="Logo de la Universidad Politecnica Salesiana" src="img/logo_ups.png" id="lups">
 		</div>
 	</header>
 	<main>
@@ -43,7 +43,7 @@
 			Pagina pag = new Pagina();
 			String menu = pag.mostrarMenu(perfil);
 			out.print("<div id=\"cuerpo-menu\"><div id=\"contenedor-menu\"><div id=\"hpagina\"><p class=\"puser\">Bienvenido "+usuario+"</h3>"+menu+"</div>" +
-					  "<img src=\"img/misionero1.png\" id=\"img-menu\"></div>");
+					  "<img alt=\"Imagen de los miembros del grupo ASU\" src=\"img/misionero1.png\" id=\"img-menu\"></div>");
 		}
 		%>
 	</main>

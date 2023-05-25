@@ -47,9 +47,6 @@ public class Postulacion {
 		}else {
 			return false;
 		}
-		
-		
-		
 	}
 	
 	/*FUNCIONAR PARA VERIFICAR SI EL USUARIO YA TIENE UNA POSTULACION ACTIVA O YA ES MIEMBRO*/

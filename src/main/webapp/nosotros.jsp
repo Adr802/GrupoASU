@@ -21,8 +21,8 @@
 			</ul>
 		</nav>
 				<div id="logos">
-			<img alt="" src="img/logo_salesiano.png" id="lsal"> 
-			<img alt="" src="img/logo_ups.png" id="lups">
+			<img alt="Logo de la Del grupo misionero salesiano" src="img/logo_salesiano.png" id="lsal"> 
+			<img alt="Logo de la Universidad Politecnica Salesiana" src="img/logo_ups.png" id="lups">
 		</div>
 	</header>
 
@@ -31,7 +31,7 @@
 		<center><h2 id="h2tit">SOBRE NOSOTROS</h2></center>
 		<div id="centrar-nosotros">
 			<div class="contenido">
-				<img alt="" src="img/misionero1.png" class="imgInicio">
+				<img alt="Personas que son parte del grupo misionero salesiano" src="img/nosotros.jpg" class="imgInicio">
 				<div id="contactos">
 					<p><b>ANIMADOR</b></p>
 					<p>Pablo Mallamas</p>

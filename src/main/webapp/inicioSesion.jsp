@@ -40,7 +40,9 @@
 			</ul>
 		</nav>
 		<div id="logos">
-			<img alt="" src="img/logo_salesiano.png" id="lsal"> <img alt=""
+			<img alt="Logo de la Del grupo misionero salesiano"
+				src="img/logo_salesiano.png" id="lsal"> <img
+				alt="Logo de la Universidad Politecnica Salesiana"
 				src="img/logo_ups.png" id="lups">
 		</div>
 	</header>
